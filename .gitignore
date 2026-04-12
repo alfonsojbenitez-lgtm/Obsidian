@@ -1,0 +1,24 @@
+# Obsidian workspace state (no versionar)
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+.obsidian/cache
+
+# Plugins (binarios con credenciales embebidas, no versionar)
+.obsidian/plugins/
+
+# Archivos de sistema
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Archivos temporales
+*.tmp
+*.temp
+
+# Claude (no versionar configuración local ni conversaciones)
+.claude/projects/
+.claude/settings.local.json
+
+# Datos fiscales y financieros sensibles
+inversiones/fiscal/
+inversiones/repositorio/

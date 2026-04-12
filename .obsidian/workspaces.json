@@ -1,0 +1,338 @@
+{
+  "workspaces": {
+    "Escritura": {
+      "main": {
+        "id": "escritura-main",
+        "type": "split",
+        "children": [
+          {
+            "id": "escritura-editor",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "escritura-leaf",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Dashboard.md",
+                    "mode": "editing",
+                    "source": false
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "id": "escritura-outline",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "escritura-outline-leaf",
+                "type": "leaf",
+                "state": {
+                  "type": "outline",
+                  "state": {}
+                }
+              }
+            ],
+            "direction": "vertical",
+            "width": 220
+          }
+        ],
+        "direction": "horizontal"
+      },
+      "left": {
+        "id": "escritura-left",
+        "type": "split",
+        "children": [
+          {
+            "id": "escritura-left-tabs",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "escritura-files",
+                "type": "leaf",
+                "state": {
+                  "type": "file-explorer",
+                  "state": {}
+                }
+              }
+            ]
+          }
+        ],
+        "direction": "horizontal",
+        "width": 240,
+        "collapsed": false
+      },
+      "right": {
+        "id": "escritura-right",
+        "type": "split",
+        "children": [
+          {
+            "id": "escritura-right-tabs",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "escritura-backlinks",
+                "type": "leaf",
+                "state": {
+                  "type": "backlink",
+                  "state": {}
+                }
+              },
+              {
+                "id": "escritura-tags",
+                "type": "leaf",
+                "state": {
+                  "type": "tag",
+                  "state": {}
+                }
+              }
+            ]
+          }
+        ],
+        "direction": "horizontal",
+        "width": 240,
+        "collapsed": false
+      },
+      "active": "escritura-leaf"
+    },
+    "Investigación": {
+      "main": {
+        "id": "invest-main",
+        "type": "split",
+        "children": [
+          {
+            "id": "invest-editor",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "invest-leaf",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "proyectos/GALIAT/GALIAT - Huella hídrica.md",
+                    "mode": "editing",
+                    "source": false
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "id": "invest-graph",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "invest-graph-leaf",
+                "type": "leaf",
+                "state": {
+                  "type": "localgraph",
+                  "state": {}
+                }
+              },
+              {
+                "id": "invest-backlinks",
+                "type": "leaf",
+                "state": {
+                  "type": "backlink",
+                  "state": {}
+                }
+              }
+            ],
+            "direction": "vertical",
+            "width": 300
+          }
+        ],
+        "direction": "horizontal"
+      },
+      "left": {
+        "id": "invest-left",
+        "type": "split",
+        "children": [
+          {
+            "id": "invest-left-tabs",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "invest-files",
+                "type": "leaf",
+                "state": {
+                  "type": "file-explorer",
+                  "state": {}
+                }
+              },
+              {
+                "id": "invest-search",
+                "type": "leaf",
+                "state": {
+                  "type": "search",
+                  "state": {}
+                }
+              }
+            ]
+          }
+        ],
+        "direction": "horizontal",
+        "width": 240,
+        "collapsed": false
+      },
+      "right": {
+        "id": "invest-right",
+        "type": "split",
+        "children": [
+          {
+            "id": "invest-right-tabs",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "invest-outline",
+                "type": "leaf",
+                "state": {
+                  "type": "outline",
+                  "state": {}
+                }
+              },
+              {
+                "id": "invest-tags",
+                "type": "leaf",
+                "state": {
+                  "type": "tag",
+                  "state": {}
+                }
+              }
+            ]
+          }
+        ],
+        "direction": "horizontal",
+        "width": 240,
+        "collapsed": false
+      },
+      "active": "invest-leaf"
+    },
+    "GALIAT": {
+      "main": {
+        "id": "galiat-main",
+        "type": "split",
+        "children": [
+          {
+            "id": "galiat-tabs",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "galiat-leaf-1",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "proyectos/GALIAT/GALIAT - Huella hídrica.md",
+                    "mode": "editing",
+                    "source": false
+                  }
+                }
+              },
+              {
+                "id": "galiat-leaf-2",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "proyectos/GALIAT/GALIAT - Bibliografía.md",
+                    "mode": "preview",
+                    "source": false
+                  }
+                }
+              },
+              {
+                "id": "galiat-leaf-3",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Dashboard.md",
+                    "mode": "preview",
+                    "source": false
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "id": "galiat-side",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "galiat-backlinks",
+                "type": "leaf",
+                "state": {
+                  "type": "backlink",
+                  "state": {}
+                }
+              },
+              {
+                "id": "galiat-localgraph",
+                "type": "leaf",
+                "state": {
+                  "type": "localgraph",
+                  "state": {}
+                }
+              }
+            ],
+            "direction": "vertical",
+            "width": 280
+          }
+        ],
+        "direction": "horizontal"
+      },
+      "left": {
+        "id": "galiat-left",
+        "type": "split",
+        "children": [
+          {
+            "id": "galiat-left-tabs",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "galiat-files",
+                "type": "leaf",
+                "state": {
+                  "type": "file-explorer",
+                  "state": {}
+                }
+              }
+            ]
+          }
+        ],
+        "direction": "horizontal",
+        "width": 240,
+        "collapsed": false
+      },
+      "right": {
+        "id": "galiat-right",
+        "type": "split",
+        "children": [
+          {
+            "id": "galiat-right-tabs",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "galiat-outline",
+                "type": "leaf",
+                "state": {
+                  "type": "outline",
+                  "state": {}
+                }
+              }
+            ]
+          }
+        ],
+        "direction": "horizontal",
+        "width": 220,
+        "collapsed": true
+      },
+      "active": "galiat-leaf-1"
+    }
+  }
+}

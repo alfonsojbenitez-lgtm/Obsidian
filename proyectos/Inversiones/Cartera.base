@@ -1,0 +1,115 @@
+filters:
+  and:
+    - 'tag == "análisis"'
+    - 'tag == "inversiones"'
+properties:
+  ticker:
+    label: "Ticker"
+    hidden: false
+  sector:
+    label: "Sector"
+    hidden: false
+  pais:
+    label: "País"
+    hidden: false
+  tipo:
+    label: "Tipo"
+    hidden: false
+  yield-estimado:
+    label: "Yield est."
+    hidden: false
+  precio-objetivo:
+    label: "P. Objetivo"
+    hidden: false
+  margen-seguridad:
+    label: "Margen seg."
+    hidden: false
+  fecha-análisis:
+    label: "Actualizado"
+    hidden: false
+summaries:
+  ticker: unique
+  sector: unique
+  tipo: unique
+views:
+  - type: table
+    name: "Todas las posiciones"
+    properties:
+      - ticker
+      - file.name
+      - sector
+      - pais
+      - tipo
+      - yield-estimado
+      - precio-objetivo
+      - margen-seguridad
+      - fecha-análisis
+    sort:
+      - property: sector
+        direction: asc
+
+  - type: table
+    name: "Pendientes de análisis"
+    filters: 'precio-objetivo == ""'
+    properties:
+      - ticker
+      - file.name
+      - sector
+      - pais
+      - tipo
+      - yield-estimado
+    sort:
+      - property: sector
+        direction: asc
+
+  - type: table
+    name: "Dividendo"
+    filters: 'tipo == "dividendo"'
+    properties:
+      - ticker
+      - file.name
+      - sector
+      - pais
+      - yield-estimado
+      - precio-objetivo
+      - margen-seguridad
+    sort:
+      - property: yield-estimado
+        direction: desc
+
+  - type: table
+    name: "Value"
+    filters: 'tipo == "value"'
+    properties:
+      - ticker
+      - file.name
+      - sector
+      - pais
+      - yield-estimado
+      - precio-objetivo
+      - margen-seguridad
+    sort:
+      - property: pais
+        direction: asc
+
+  - type: table
+    name: "Por sector"
+    properties:
+      - ticker
+      - file.name
+      - sector
+      - pais
+      - yield-estimado
+      - margen-seguridad
+    sort:
+      - property: sector
+        direction: asc
+
+  - type: cards
+    name: "Tarjetas"
+    properties:
+      - ticker
+      - sector
+      - tipo
+      - yield-estimado
+      - margen-seguridad

@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:github.com)",
+      "WebFetch(domain:raw.githubusercontent.com)",
+      "WebFetch(domain:pmc.ncbi.nlm.nih.gov)",
+      "WebFetch(domain:registry.npmjs.org)",
+      "Read(//c/Users/alfon/.claude/**)"
+    ],
+    "additionalDirectories": [
+      "c:\\Users\\alfon\\GALIAT\\.claude\\skills",
+      "c:\\Users\\alfon\\GALIAT"
+    ]
+  }
+}

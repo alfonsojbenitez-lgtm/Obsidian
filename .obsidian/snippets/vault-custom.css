@@ -1,0 +1,80 @@
+/* ============================================
+   VAULT PERSONALIZADO — Alfonso Javier Benítez
+   ============================================ */
+
+/* --- Anchura de página para estadísticas y fuentes --- */
+.dashboard .markdown-preview-view,
+.markdown-source-view.mod-cm6 .cm-content {
+  max-width: 900px;
+}
+
+body.dashboard .markdown-preview-view {
+  max-width: 100%;
+  padding: 0 2rem;
+}
+
+/* --- Callout GALIAT personalizado --- */
+.callout[data-callout="galiat"] {
+  --callout-color: 20, 120, 200;
+  --callout-icon: lucide-flask-conical;
+}
+
+/* --- Tags resaltados por categoría --- */
+.tag[href="#GALIAT"],
+.tag[href="#galiat"] {
+  background-color: rgba(20, 120, 200, 0.2);
+  color: rgb(20, 100, 180);
+  border: 1px solid rgba(20, 120, 200, 0.4);
+  font-weight: 600;
+}
+
+.tag[href="#estadística"],
+.tag[href="#estadistica"] {
+  background-color: rgba(0, 150, 100, 0.2);
+  color: rgb(0, 120, 80);
+  border: 1px solid rgba(0, 150, 100, 0.4);
+}
+
+.tag[href="#pendiente"] {
+  background-color: rgba(220, 80, 80, 0.2);
+  color: rgb(180, 40, 40);
+  border: 1px solid rgba(220, 80, 80, 0.4);
+  font-weight: 600;
+}
+
+.tag[href="#diario"],
+.tag[href="#semanal"],
+.tag[href="#mensual"] {
+  background-color: rgba(150, 150, 150, 0.15);
+  color: rgb(100, 100, 100);
+}
+
+.tag[href="#reunión"],
+.tag[href="#reunion"] {
+  background-color: rgba(200, 120, 20, 0.2);
+  color: rgb(160, 90, 10);
+  border: 1px solid rgba(200, 120, 20, 0.4);
+}
+
+/* --- Dashboard: ocultar el frontmatter --- */
+.dashboard .metadata-container {
+  display: none;
+}
+
+/* --- Tareas completadas más tenues --- */
+.task-list-item.is-checked {
+  opacity: 0.5;
+}
+
+/* --- Ancho máximo para notas de estadísticas --- */
+.mod-root .view-content[data-type="markdown"] .markdown-preview-section {
+  max-width: 860px;
+  margin: 0 auto;
+}
+
+/* --- Separadores de sección más visibles --- */
+.markdown-preview-view hr {
+  border: none;
+  border-top: 1px solid var(--color-base-30);
+  margin: 1.5rem 0;
+}

@@ -1,0 +1,50 @@
+{
+  "quickadd:capture-inbox": [
+    {
+      "modifiers": ["Alt"],
+      "key": "Q"
+    }
+  ],
+  "quickadd:nueva-tarea": [
+    {
+      "modifiers": ["Alt"],
+      "key": "T"
+    }
+  ],
+  "quickadd:nueva-busqueda": [
+    {
+      "modifiers": ["Alt"],
+      "key": "B"
+    }
+  ],
+  "quickadd:nueva-reunion": [
+    {
+      "modifiers": ["Alt"],
+      "key": "R"
+    }
+  ],
+  "periodic-notes:open-daily-note": [
+    {
+      "modifiers": ["Alt"],
+      "key": "D"
+    }
+  ],
+  "periodic-notes:open-weekly-note": [
+    {
+      "modifiers": ["Alt"],
+      "key": "W"
+    }
+  ],
+  "templater-obsidian:insert-templater": [
+    {
+      "modifiers": ["Alt"],
+      "key": "P"
+    }
+  ],
+  "app:open-vault": [
+    {
+      "modifiers": ["Ctrl", "Shift"],
+      "key": "D"
+    }
+  ]
+}

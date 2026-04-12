@@ -1,0 +1,100 @@
+{
+  "collapse-filter": false,
+  "search": "",
+  "showTags": true,
+  "showAttachments": false,
+  "hideUnresolved": false,
+  "showOrphans": false,
+  "collapse-color-groups": false,
+  "colorGroups": [
+    {
+      "query": "path:proyectos/GALIAT",
+      "color": {
+        "a": 1,
+        "rgb": 14408667
+      }
+    },
+    {
+      "query": "path:proyectos/SERGAS",
+      "color": {
+        "a": 1,
+        "rgb": 16744448
+      }
+    },
+    {
+      "query": "path:proyectos/IA",
+      "color": {
+        "a": 1,
+        "rgb": 9699539
+      }
+    },
+    {
+      "query": "path:estadisticas",
+      "color": {
+        "a": 1,
+        "rgb": 1681177
+      }
+    },
+    {
+      "query": "path:personal",
+      "color": {
+        "a": 1,
+        "rgb": 16744272
+      }
+    },
+    {
+      "query": "path:búsquedas",
+      "color": {
+        "a": 1,
+        "rgb": 10040115
+      }
+    },
+    {
+      "query": "path:fuentes",
+      "color": {
+        "a": 1,
+        "rgb": 16737792
+      }
+    },
+    {
+      "query": "path:inversiones",
+      "color": {
+        "a": 1,
+        "rgb": 3394611
+      }
+    },
+    {
+      "query": "path:notas-diarias",
+      "color": {
+        "a": 1,
+        "rgb": 8947848
+      }
+    },
+    {
+      "query": "path:inbox",
+      "color": {
+        "a": 1,
+        "rgb": 16711680
+      }
+    },
+    {
+      "query": "tag:sistema",
+      "color": {
+        "a": 1,
+        "rgb": 8421504
+      }
+    }
+  ],
+  "collapse-display": false,
+  "showArrow": true,
+  "textFadeMultiplier": 0,
+  "nodeSizeMultiplier": 1.2,
+  "lineSizeMultiplier": 0.8,
+  "collapse-forces": false,
+  "centerStrength": 0.518713248970312,
+  "repelStrength": 14,
+  "linkStrength": 0.8,
+  "linkDistance": 200,
+  "scale": 0.3071514834466335,
+  "close": true
+}
