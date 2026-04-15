@@ -1,0 +1,59 @@
+name: 📰 Noticias de mercado diarias
+
+on:
+  schedule:
+    # 7:00 UTC = 8:00 CET (invierno) / 9:00 CEST (verano) — lunes a viernes
+    - cron: '0 7 * * 1-5'
+  workflow_dispatch:
+    inputs:
+      fecha:
+        description: 'Fecha (YYYY-MM-DD). Vacío = hoy'
+        required: false
+        default: ''
+
+permissions:
+  contents: write
+
+jobs:
+  fetch-news:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Setup Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+
+      - name: Install dependencies
+        run: |
+          pip install --quiet \
+            yfinance==0.2.55 \
+            feedparser==6.0.11 \
+            anthropic==0.49.0 \
+            requests==2.32.3
+
+      - name: Fetch and generate news summary
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          INPUT_FECHA: ${{ github.event.inputs.fecha }}
+        run: python .github/scripts/fetch_noticias.py
+
+      - name: Commit and push
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add proyectos/Inversiones/noticias/
+          if git diff --staged --quiet; then
+            echo "Sin cambios para commitear"
+          else
+            git commit -m "📰 Noticias mercado $(date +%Y-%m-%d)"
+            git push
+            echo "Nota publicada correctamente"
+          fi
