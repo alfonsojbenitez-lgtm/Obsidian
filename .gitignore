@@ -20,5 +20,13 @@ desktop.ini
 .claude/settings.local.json
 
 # Datos fiscales y financieros sensibles
+proyectos/Inversiones/fiscal/
+proyectos/Inversiones/repositorio_radar/
 inversiones/fiscal/
 inversiones/repositorio/
+
+# R — datos binarios (pueden contener datos de pacientes)
+*.RData
+*.rds
+.Rhistory
+.Rapp.history
