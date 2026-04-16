@@ -2,8 +2,9 @@ name: 📰 Noticias de mercado diarias
 
 on:
   schedule:
-    # 7:00 UTC = 8:00 CET (invierno) / 9:00 CEST (verano) — lunes a viernes
-    - cron: '0 7 * * 1-5'
+    # 7:00 hora española — lunes a viernes
+    - cron: '0 5 * * 1-5'   # verano CEST (UTC+2): 7:00
+    - cron: '0 6 * * 1-5'   # invierno CET  (UTC+1): 7:00
   workflow_dispatch:
     inputs:
       fecha:
